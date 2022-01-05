@@ -18,7 +18,7 @@ self_refine_width2 = 15
 [train]
 total_step = 100000
 warmup_step = 5000
-val_step = 5000
+val_step = 500
 clip_grad = true
 G_lr = 1e-3
 rec_weight = 1.0
@@ -51,4 +51,4 @@ logging_path = "./logs/stdout"
 logging_step =  10
 logging_level = "INFO"
 checkpoint_path = "./checkpoints"
-checkpoint_step = 2000
+checkpoint_step = 500

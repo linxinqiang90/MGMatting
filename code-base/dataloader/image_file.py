@@ -81,7 +81,7 @@ class ImageFileTest(ImageFile):
                  merged_dir="test_merged",
                  trimap_dir="test_trimap",
                  alpha_ext=".png",
-                 merged_ext=".png",
+                 merged_ext=".jpg",
                  trimap_ext=".png"):
         super(ImageFileTest, self).__init__(phase="test")
 
