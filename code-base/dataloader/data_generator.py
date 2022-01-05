@@ -498,6 +498,7 @@ class DataGenerator(Dataset):
 
     def __getitem__(self, idx):
         if self.phase == "train":
+            print(self.fg[idx % self.fg_num])
             fg = cv2.imread(self.fg[idx % self.fg_num])
             alpha = cv2.imread(self.alpha[idx % self.fg_num], 0).astype(np.float32)/255
             bg = cv2.imread(self.bg[idx], 1)

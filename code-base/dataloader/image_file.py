@@ -50,9 +50,9 @@ class ImageFileTrain(ImageFile):
                  alpha_dir="train_alpha",
                  fg_dir="train_fg",
                  bg_dir="train_bg",
-                 alpha_ext=".jpg",
-                 fg_ext=".jpg",
-                 bg_ext=".jpg"):
+                 alpha_ext=".png",
+                 fg_ext=".png",
+                 bg_ext=".png"):
         super(ImageFileTrain, self).__init__(phase="train")
 
         self.alpha_dir  = alpha_dir
